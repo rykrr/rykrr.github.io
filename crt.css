@@ -72,7 +72,7 @@
   bottom: 0;
   right: 0;
   position: fixed;
-  background-image: url("file:///C:/Users/Hiroshi/Desktop/Website/noise/0.png");
+  background-image: url("https://raw.githubusercontent.com/rykrr/rykrr.github.io/refs/heads/main/noise/0.png");
   background-repeat: repeat;
   pointer-events: none;
   opacity: 10%;
