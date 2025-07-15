@@ -1,0 +1,118 @@
+:root {
+	--primary-background-colour: #1110;
+	--secondary-background-colour: #2220;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Doto", "IBM Plex Sans", monospace;
+
+	background-color: var(--secondary-background-colour);
+	background-image: url("file:///C:/Users/Hiroshi/Downloads/to3.jpg");
+	background-image: url("https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=su-san-lee-E_eWwM29wfU-unsplash.jpg&w=1920");
+	background-position: calc(1900px - 90vw) 0px;
+	background-size: cover;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 100vw;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+
+	color: #fff;
+}
+
+.alt * { 
+	font-family: "IBM Plex Sans", monospace;
+	font-weight: 100 !important;
+}
+
+* {
+	font-weight: 400;
+}
+
+#flexbody {
+	flex-direction: column;
+	background-color: var(--primary-background-colour);
+	width: 95vw;
+	height: 90vh;
+	display: flex;
+	padding: 10px;
+	border-radius: 10px;
+	gap: 10px;
+}
+
+#flexbody > div {
+	padding: 5px;
+	background-color: var(--primary-background-colour);
+	--border: 1px solid red;
+	--border-radius: 10px;
+}
+
+h1 { font-size: 40pt; }
+h2 { font-size: 36pt; }
+h3 { font-size: 32pt; }
+p { font-size: 24pt; }
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--background-colour);
+}
+
+.content > div > :first-child {
+	margin-top: 0;
+}
+
+.sidebar {
+	min-width: 20%;
+}
+
+.sidebar > div {
+	margin: 10px;
+}
+
+#left > div > * {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#middle {
+	min-width: 50%;
+}
+
+#middle > div {
+	margin: 10px;
+}
+
+#right {
+	text-align: right;
+	display: none;
+}
+
+@media (min-width: 1000px) {
+	body {
+		background-position: 0 0;
+	}
+
+	#flexbody {
+		flex-direction: row;
+	}
+
+	#middle {
+		text-align: center;
+	}
+
+	#right {
+		display: block;
+	}
+}
+

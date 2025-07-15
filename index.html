@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>rykr.ca | Home</title>
+		<meta charset='UTF-8'>
+
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=VT323&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="colours.css">
+		<link rel="stylesheet" href="crt.css">
+	</head>
+	<body class="crt lt" onload="init()">
+		<div id="flexbody">
+			<div id="left" class="sidebar content">
+				<div>
+				<h1><span>Ryan K.</span></h1>
+                		<h3>204 No Content</h3>
+				<p>
+				<a class="c-blue" href="https://github.com/rykrr">[github]</a>
+				</p>
+				</div>
+			</div>
+			<div id="middle" class="content">
+				<!-- Coming Soon -->
+				<!-- <p id='terminal' spellcheck=false></p> -->
+				<div>
+				<p>Nothing to see here...</p>
+				</div>
+			</div>
+			<div id="right" class="sidebar content">
+				<div>
+				<p><span id=datestamp></span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<div id=scanlines></div>
+	<div id=noise></div>
+	<script>
+	var date = new Date(Date.now()).toLocaleString("en-CA", {
+		weekday: "long",
+		year: "numeric",
+		month: "long",
+		day: "numeric"
+	});
+	var datestamp = document.getElementById("datestamp");
+	datestamp.innerHTML = date;
+	</script>
+</html>

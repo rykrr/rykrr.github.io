@@ -1,0 +1,34 @@
+:root {
+	--purple: #EE4266;
+	--blue: #00ABE7;
+	--green: #0EAD69;
+	--orange: #FFD23F;
+	--red: #EE4266;
+}
+
+.c-purple { color: var(--purple); }
+.c-orange { color: var(--orange); }
+.c-green { color: var(--green); }
+.c-blue { color: var(--blue); }
+.c-red { color: var(--red); }
+
+a.c-purple:hover {
+	background-color: var(--purple);
+}
+
+a.c-orange:hover {
+	background-color: var(--orange);
+}
+
+a.c-green:hover {
+	background-color: var(--green);
+}
+
+a.c-blue:hover {
+	background-color: var(--blue);
+}
+
+a.c-red:hover {
+	background-color: var(--red);
+}
+
