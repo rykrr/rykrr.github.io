@@ -13,6 +13,7 @@ body {
 
 	background-color: var(--secondary-background-colour);
 	background-image: url("https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=su-san-lee-E_eWwM29wfU-unsplash.jpg&w=1920");
+	background-attachment: fixed;
 	background-position: calc(1900px - 90vw) 0px;
 	background-size: cover;
 
@@ -72,6 +73,7 @@ a:hover {
 }
 
 .sidebar {
+	position: sticky;
 	min-width: 25%;
 }
 
@@ -85,7 +87,7 @@ a:hover {
 }
 
 #middle {
-	min-width: 50%;
+	min-width: 45%;
 }
 
 #middle > div {
