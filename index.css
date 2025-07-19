@@ -41,7 +41,7 @@ body {
 	flex-direction: column;
 	background-color: var(--primary-background-colour);
 	width: 95vw;
-	height: 90vh;
+	min-height: 90vh;
 	display: flex;
 	padding: 10px;
 	border-radius: 10px;
@@ -74,6 +74,8 @@ a:hover {
 
 .sidebar {
 	position: sticky;
+	top: 0;
+	height: fit-content;
 	min-width: 25%;
 }
 
